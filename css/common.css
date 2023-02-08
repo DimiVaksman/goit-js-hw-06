@@ -26,13 +26,16 @@ button {
 
 .gallery {
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: center;
   list-style-type: none;
-
-
+  padding: 0;
 }
 
+.liadd:not(:last-child){
+  margin-right: 15px;
+}
 
-
-
+.imgadd{
+width: 400px;
+height: 400px;
+}
