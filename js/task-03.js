@@ -16,6 +16,9 @@ const images = [
 
 
 const galleryEl = document.querySelector('.gallery')
+galleryEl.style.display = 'flex';
+galleryEl.style.padding = '0';
+
 
 const getImageEl = images.map(imagesItem => {
   const liEl = document.createElement('li');
@@ -25,11 +28,13 @@ const getImageEl = images.map(imagesItem => {
   imageEl.classList.add('imgadd')
   imageEl.src = imagesItem.url; 
   imageEl.alt = imagesItem.alt;
+  imageEl.style.width = '480px';
+  imageEl.style.height = '280px';
   
-  // liEl.append(imageEl)
-  // galleryEl.append(liEl)
+  liEl.append(imageEl)
+  galleryEl.append(liEl)
 
-  galleryEl.insertAdjacentHTML("beforeend", `<li class="liadd"><img class="imgadd" scr = '${imageEl.src}' alt = '${imageEl.alt}'></li>`)
+  // galleryEl.insertAdjacentHTML("beforeend", `<li class="liadd"><img class="imgadd" scr = '${imageEl.src}' alt = '${imageEl.alt}'></li>`)
 
   // чомусь коли добавляю через insertAdjacentHTML не підгружає картинки, в чому проблема?
 
