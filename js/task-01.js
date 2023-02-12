@@ -9,3 +9,6 @@ liEl.forEach((liItem) => {
 console.log('Category:' , liItem.firstElementChild.textContent);
 console.log('Elements' , liItem.lastElementChild.children.length);
 })
+
+
+
