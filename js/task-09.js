@@ -1,17 +1,21 @@
 
 
 const btnChangeColor = document.querySelector('.change-color');
-console.log(btnChangeColor)
+console.log(btnChangeColor);
 
-const body = document.querySelector('body')
-console.log(body)
+const body = document.querySelector('body');
+console.log(body);
 
+
+const colorEl = document.querySelector('.color');
+console.log(colorEl)
 
 btnChangeColor.addEventListener('click' , (event) => {
 
 
+body.style.backgroundColor = getRandomHexColor();
 
-body.style.backgroundColor = getRandomHexColor()
+colorEl.textContent = body.style.backgroundColor;
 
 console.log('test change color');
 })

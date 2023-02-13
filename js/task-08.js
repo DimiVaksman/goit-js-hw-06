@@ -23,6 +23,7 @@ function submitFn (event) {
 
     if( data.email === "" || data.password === ""){
         alert("Bсі поля повинні бути заповнені!")
+        return
     }
     formEl.reset();
 

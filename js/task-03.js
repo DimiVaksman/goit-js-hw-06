@@ -23,7 +23,6 @@ galleryEl.style.display = 'flex';
 
 const getImageEl = images.forEach(imagesItem => {
 
-
   galleryEl.insertAdjacentHTML("beforeend", `<li style="margin-right: 15px" >
   <img width="480" height="280" src="${imagesItem.url}" alt="${imagesItem.alt}">
 </li>`)
